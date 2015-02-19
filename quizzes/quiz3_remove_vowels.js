@@ -1,7 +1,7 @@
 function deVowelizer(yo) {
 	var vowels = ['a', 'e', 'i', 'o', 'u'];
 	var phrase = yo;
-	var new_phrase = [];
+	var new_phrase = "";
 	
 	for( var i = 0; i < phrase.length; i++) {
 		var isConsonant = true;
@@ -11,11 +11,13 @@ function deVowelizer(yo) {
 				isConsonant = false;
 			};
 		};
+
 		if(isConsonant === true) {
-			new_phrase.push(phrase[i]);
+			new_phrase += phrase[i];
 		};
+
 	};
-	console.log(new_phrase.join(''));
+	console.log(new_phrase);
 };
 
 // var prompt;
